@@ -1,0 +1,19 @@
+# Program to calculate the area and perimeter of a rectangle
+
+# Define the length and width of the rectangle
+length = 10  # in units
+width = 5    # in units
+
+# Calculate the area
+area = length * width
+
+# Calculate the perimeter
+perimeter = 2 * (length + width)
+
+# Display the results
+print("Rectangle Details")
+print("------------------")
+print(f"Length    : {length} units")
+print(f"Width     : {width} units")
+print(f"Area      : {area} square units")
+print(f"Perimeter : {perimeter} units")

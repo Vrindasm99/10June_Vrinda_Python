@@ -1,0 +1,5 @@
+list = ['vrinda','krishna','trisha','alina']
+print(list)
+
+for i in list:
+    print(f"{i}-{list.index(i)}")

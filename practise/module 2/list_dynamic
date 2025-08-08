@@ -1,0 +1,8 @@
+a=int(input("Enter the range for your list :"))
+L1=[]
+
+for i in range(a):
+    item=input(f'Element {i +1} =')
+    L1.append(item)
+
+print(L1)

@@ -1,0 +1,27 @@
+class Student:
+    sub1: float
+    sub2: float
+    sub3: float
+    sub4: float
+
+    def getdata(self):
+        self.sub1 = float(input("Enter marks for Subject 1: "))
+        self.sub2 = float(input("Enter marks for Subject 2: "))
+        self.sub3 = float(input("Enter marks for Subject 3: "))
+        self.sub4 = float(input("Enter marks for Subject 4: "))
+
+class Result(Student):
+    def printdata(self):
+        total = self.sub1 + self.sub2 + self.sub3 + self.sub4
+        percentage = total / 4
+        print("\n--- Result ---")
+        print("Subject 1:", self.sub1)
+        print("Subject 2:", self.sub2)
+        print("Subject 3:", self.sub3)
+        print("Subject 4:", self.sub4)
+        print("Total Marks:", total)
+        print("Percentage: {:.2f}%".format(percentage))
+        
+r = Result()
+r.getdata()
+r.printdata()

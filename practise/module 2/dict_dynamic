@@ -1,0 +1,13 @@
+stdata={}
+
+keys=['i','name','city']
+
+for i in range(len(keys)):
+    values=input(f"Enter values for {keys[i]} : ")
+    stdata[keys[i]]=values
+
+print(stdata)
+
+for i in stdata.items():
+    print(i)
+    

@@ -1,0 +1,8 @@
+#dynamicallly fecth multiple values for a key
+
+a={['id': 11,12,13,14,15,16,17],
+['name':"vrinda","krishna","nenshi","lina","sheela","trisha","Yana"],
+['city':"Rajkot","Morbi","Shapar","Veraval","Una","Limbi","Surat"]}
+
+print(a)
+

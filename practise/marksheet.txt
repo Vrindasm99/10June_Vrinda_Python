@@ -1,0 +1,6 @@
+sub1=int(input("Enter Marks for English : "))
+sub2=int(input("Enter Marks for Maths : "))
+sub3=int(input("Enter Marks for Science : "))
+sub4=int(input("Enter Marks for Social studies : "))
+Total=sub1+sub2+sub3+sub4
+Per=

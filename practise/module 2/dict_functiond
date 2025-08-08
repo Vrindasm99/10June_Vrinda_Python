@@ -1,0 +1,14 @@
+n = int(input("Enter the number of PAIRS: "))
+my_dict = {}
+
+for i in range(n):
+    key = input(f"Enter KEY {i+1}: ")
+    value = input(f"Enter items for VALUE : ")
+    my_dict[key] = value
+
+print(my_dict)
+
+for i in my_dict.items():
+    print(i)
+
+

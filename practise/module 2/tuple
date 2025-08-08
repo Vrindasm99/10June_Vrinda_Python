@@ -1,0 +1,10 @@
+a=int(input("Number of Students to be entered : "))
+name=set()
+
+
+for i in range(a):
+    n=input(f"Student {i + 1} : ")
+    name.add(n)
+
+print(name)
+
