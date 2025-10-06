@@ -1,0 +1,27 @@
+# Practical Example 22: Write a Python program to insert data into an SQLite3 database and fetch it.
+import sqlite3
+
+DB_NAME = "beginner_data.db"
+
+# We assume the database and table exist from Example 21.
+conn = sqlite3.connect(DB_NAME)
+cursor = conn.cursor()
+
+# 1. Insert Data
+user_data = ('Bob', 'Manager')
+insert_sql = "INSERT INTO users (name, role) VALUES (?, ?)"
+cursor.execute(insert_sql, user_data)
+conn.commit()
+print(f"Inserted user: {user_data}")
+
+# 2. Fetch Data (Select all)
+cursor.execute("SELECT id, name, role FROM users")
+
+# fetchall() gets all the results
+results = cursor.fetchall()
+
+print("\n--- All Users in Database ---")
+for row in results:
+    print(f"ID: {row[0]}, Name: {row[1]}, Role: {row[2]}")
+
+conn.close()
