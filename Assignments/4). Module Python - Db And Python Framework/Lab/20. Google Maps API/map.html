@@ -1,0 +1,9 @@
+<div id="map" style="height:400px;width:100%"></div>
+<script>
+function initMap() {
+  var loc = {lat:12.97,lng:77.59};
+  var map = new google.maps.Map(document.getElementById('map'),{zoom:12,center:loc});
+  var marker = new google.maps.Marker({position:loc,map:map});
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=initMap" async defer></script>
